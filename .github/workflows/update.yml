@@ -1,13 +1,9 @@
 on:
   schedule:
     - cron: "*/30 * * * *"
-  workflow_dispatch:
-    inputs:
-      force:
-        description: 'Force update of all manifests'
-        required: false
-        default: 'false'
-
+  push:
+    branches:
+      - main
 name: Update watched packages
 jobs:
   update:
@@ -21,7 +17,7 @@ jobs:
         uses: foosel/scoop-checkver-action@main
         with:
           bucket: bucket
-          force: ${{ github.event.inputs.force }}
+          force: true
 
       - name: 🚀 Deploy changes
         run: |
