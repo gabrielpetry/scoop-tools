@@ -12,12 +12,12 @@
     },
     "bin": [
         [
-            "bin\\freecad.exe"
+            "RunFreeCAD.bat"
         ]
     ],
     "shortcuts": [
         [
-            "bin\\freecad.exe",
+            "RunFreeCAD.bat",
             "FreeCAD"
         ]
     ],
