@@ -3,7 +3,7 @@ on:
     - cron: "*/30 * * * *"
   push:
     branches:
-      - main
+      - master
 name: Update watched packages
 jobs:
   update:
