@@ -1,0 +1,37 @@
+{
+    "version": "36391",
+    "description": "General-purpose parametric 3D CAD modeler and a building information modeling software with finite-element-method support. Weekly development build.",
+    "homepage": "https://www.freecadweb.org",
+    "license": "GPL-3.0-or-later",
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/realthunder/FreeCAD/releases/download/FreeCAD-Link-Stable-Win-x86_64-py3.11-20240322.7z",
+            "extract_dir": "FreeCAD-Link-Stable-Win-x86_64-py3.11-20240322.7z",
+            "hash": "7b5f2067b2870640a72a45e8714b9e01c369130857b5fe0d61a6db0994258dfd"
+        }
+    },
+    "bin": [
+        [
+            "bin\\freecad.exe"
+        ]
+    ],
+    "shortcuts": [
+        [
+            "bin\\freecad.exe",
+            "FreeCAD"
+        ]
+    ],
+    "checkver": {
+        "url": "https://api.github.com/repos/realthunder/FreeCAD/releases",
+        "regex": "FreeCAD-Link-Stable-Win-x86_64-py3.11-(?<version>\\d+).7z",
+        "replace": "${version}"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/realthunder/FreeCAD/releases/download/FreeCAD-Link-Stable-Win-x86_64-py3.11-$version.7z",
+                "extract_dir": "https://github.com/realthunder/FreeCAD/releases/download/FreeCAD-Link-Stable-Win-x86_64-py3.11-$version.7z"
+            }
+        }
+    }
+}
