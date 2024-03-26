@@ -11,7 +11,7 @@ jobs:
       - name: Checkout repo
         uses: actions/checkout@master
 
-      - name: ♻ Run autoupdate
+      - name: Run autoupdate
         uses: foosel/scoop-checkver-action@main
         with:
           bucket: bucket
