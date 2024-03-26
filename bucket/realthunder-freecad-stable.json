@@ -6,7 +6,7 @@
     "architecture": {
         "64bit": {
             "url": "https://github.com/realthunder/FreeCAD/releases/download/20240322stable/FreeCAD-Link-Stable-Win-x86_64-py3.11-20240322.7z",
-            "extract_dir": "FreeCAD-Link-Stable-Win-x86_64-py3.11-20240322.7z",
+            "extract_dir": "FreeCAD-Link-Stable-Win-x86_64-py3.11-20240322",
             "hash": "7b5f2067b2870640a72a45e8714b9e01c369130857b5fe0d61a6db0994258dfd"
         }
     },
@@ -29,8 +29,7 @@
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://github.com/realthunder/FreeCAD/releases/download/${version}stable/FreeCAD-Link-Stable-Win-x86_64-py3.11-$version.7z",
-                "extract_dir": "https://github.com/realthunder/FreeCAD/releases/download/${version}stable/FreeCAD-Link-Stable-Win-x86_64-py3.11-$version.7z"
+                "url": "https://github.com/realthunder/FreeCAD/releases/download/${version}stable/FreeCAD-Link-Stable-Win-x86_64-py3.11-$version.7z"
             }
         }
     }
